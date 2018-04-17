@@ -1,6 +1,6 @@
 class GuessWho extends Phaser.Game {
     constructor(divID: string) {
-        super(1366, 768, Phaser.AUTO, divID, null, false);
+        super(1366, "100%", Phaser.AUTO, divID, null, false);
         this.state.add("WelcomeState", new WelcomeState());
         this.state.add("SelectState", new SelectState());
         this.state.add("WaitState", new WaitState());
