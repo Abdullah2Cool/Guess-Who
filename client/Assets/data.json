@@ -1,0 +1,272 @@
+{
+  "Archetypes": [
+    {
+      "Type": "The Innocent",
+      "NumQuestions": 3,
+      "1": "Is your character an innocent and wants to live a happy and complete life filled with love?",
+      "2": "Is your character an innocent victim of a much bigger plot ruled by other’s desires?",
+      "3": "Does your character end up dying at the end?"
+    },
+    {
+      "Type": "The Average Joe",
+      "NumQuestions": 2,
+      "1": "Is your character an average Joe in a world of extraordinary people?",
+      "2": "Does he or she fear being excluded and often try to harder than others to fit in?"
+    },
+    {
+      "Type": "The Hero",
+      "NumQuestions": 3,
+      "1": "Does he or she believe that where there is a will, there's a way?",
+      "2": "Does your character always stand up for what is right and look for battles to improve their own skill? Is he or she afraid of being weak?",
+      "3": "Is your character the hero of their story?"
+    },
+    {
+      "Type": "The Caregiver",
+      "NumQuestions": 3,
+      "1": "Is your character the voice of reason in her group?",
+      "2": "Does he or she come from humble beginnings and care for everyone in their group?",
+      "3": "Does your character fear being considered selfish by society and being abused for their kindness?"
+    },
+    {
+      "Type": "The Rebel",
+      "NumQuestions": 4,
+      "1": "Does your character have a certain disregard for the rules? Is reckless their middle name?",
+      "2": "Does your character believe in taking revenge or starting a revolution?",
+      "3": "Does your character go too far in their quest for revenge? Do they become what they set out to stop?",
+      "4": "Is your character afraid of being powerless?"
+    },
+    {
+      "Type": "The Lover",
+      "NumQuestions": 3,
+      "1": "Is your character deeply in love or falls in love with the main character of the story?",
+      "2": "Can your character be considered clingy and overly affectionate despite the fact that their love comes from a good place?",
+      "3": "Is your character’s love manipulated by other characters to achieve their objectives?"
+    },
+    {
+      "Type": "The Jester",
+      "NumQuestions": 2,
+      "1": "Does you character believe that you only live once and tries to live every moment to its fullest?",
+      "2": "Does your character try to lighten the mood using humor and often gain an equal footing with someone more educated through their wit alone?"
+    },
+    {
+      "Type": "The Sage",
+      "NumQuestions": 3,
+      "1": "Does your character appear as an all knowing sage that uses his or her wisdom to help the main character?",
+      "2": "Does your character call the main character of the story to action (often pertaining to some loose ends left by them)?",
+      "3": "Is your character a father figure for the main character?"
+    },
+    {
+      "Type": "The Ruler",
+      "NumQuestions": 4,
+      "1": "Does your character believe that power isn’t everything, it’s the only thing?",
+      "2": "Does your character want to establish peace (in their own twisted way) while maintaining their control over everything?",
+      "3": "Is your character afraid of an uprising and does everything in their power to maintain control?",
+      "4": "Is your character willing to sacrifice anything to gain power?"
+    },
+    {
+      "Type": "The Contagonist",
+      "NumQuestions": 2,
+      "1": "Does your character end up being an antagonist to the main character despite not having any direct motive to slay the main character?",
+      "2": "Is your character an underling to the main villain?"
+    }
+  ],
+  "Characters": [
+    {
+      "Name": "Hamlet",
+      "Archetypes": [
+        "The Hero",
+        "The Rebel"
+      ],
+      "Question": "Is your character cursed with indecision and doomed to recite long soliloquies about himself?"
+    },
+    {
+      "Name": "Ophelia",
+      "Archetypes": [
+        "The Innocent",
+        "The Caregiver",
+        "The Lover"
+      ],
+      "Question": "Does your character have a tendency to look for approval from his/her dad or brother?"
+    },
+    {
+      "Name": "Old\nHamlet",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Does your character come back from the after life to warn about a great evil?"
+    },
+    {
+      "Name": "Claudius",
+      "Archetypes": [
+        "The Ruler"
+      ],
+      "Question": "Is your character a very cunning politician?"
+    },
+    {
+      "Name": "Gertrude",
+      "Archetypes": [
+        "The Caregiver"
+      ],
+      "Question": "Does your character possess a lot of underlying political power?"
+    },
+    {
+      "Name": "Polonius",
+      "Archetypes": [
+        "The Average Joe"
+      ],
+      "Question": "Is your character known for using too many syllables to explain the simplest of things?"
+    },
+    {
+      "Name": "Laertes",
+      "Archetypes": [
+        "The Hero",
+        "The Contagonist"
+      ],
+      "Question": "Is your character suspiciously overprotective of her sister?"
+    },
+    {
+      "Name": "Rosencrantz\n&\nGuildenstern",
+      "Archetypes": [
+        "The Average Joe"
+      ],
+      "Question": "Is your character a duo of two average friends looking to make a buck and save a friend?"
+    },
+    {
+      "Name": "Anakin \nSkywalker",
+      "Archetypes": [
+        "The Innocent",
+        "The Rebel"
+      ],
+      "Question": "Is your character (in his younger days) known to be a child of prophecy destined to restore balance to the force?"
+    },
+    {
+      "Name": "Darth\nVader",
+      "Archetypes": [
+        "The Ruler"
+      ],
+      "Question": "Does your character succumb to the dark side?"
+    },
+    {
+      "Name": "Padme",
+      "Archetypes": [
+        "The Innocent",
+        "The Lover"
+      ],
+      "Question": "Is your character a female politician with great knowledge of the empire?"
+    },
+    {
+      "Name": "Obi-Wan\nKenobi",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Is your character tasked with training the one who shall one day restore balance to the force?"
+    },
+    {
+      "Name": "Han\nSolo",
+      "Archetypes": [
+        "The Rebel"
+      ],
+      "Question": "Is your character an excellent pilot capable of flying any ship?"
+    },
+    {
+      "Name": "Luke\nSkywalker",
+      "Archetypes": [
+        "The Rebel"
+      ],
+      "Question": "Does your character famously comes to know his father with the phrase '... I am your father'?"
+    },
+    {
+      "Name": "Yoda",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Speak like this, does your character?"
+    },
+    {
+      "Name": "Harry\nPotter",
+      "Archetypes": [
+        "The Hero",
+        "The Rebel"
+      ],
+      "Question": "Does your character possess all three gifts from the deathly hallows?"
+    },
+    {
+      "Name": "Dumbledore",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Is your character the headmaster of the greatest magic school in all of history?"
+    },
+    {
+      "Name": "Ron\nWeasley",
+      "Archetypes": [
+        "The Average Joe"
+      ],
+      "Question": "Is your character a part of a large family with each member possessing red hair?"
+    },
+    {
+      "Name": "Voldemort",
+      "Archetypes": [
+        "The Ruler"
+      ],
+      "Question": "Is your character lacking a nose?"
+    },
+    {
+      "Name": "Hermione\nGranger",
+      "Archetypes": [
+        "The Caregiver"
+      ],
+      "Question": "Is your character known for the famous spell for making things float?"
+    },
+    {
+      "Name": "Simba",
+      "Archetypes": [
+        "The Hero"
+      ],
+      "Question": "Is your character the first ever vegetarian lion?"
+    },
+    {
+      "Name": "King\nMufasa",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Is your character the king of pride rock?"
+    },
+    {
+      "Name": "Rafiki",
+      "Archetypes": [
+        "The Sage"
+      ],
+      "Question": "Is your character famously known for holding young lions over a tall ledge?"
+    },
+    {
+      "Name": "Scar",
+      "Archetypes": [
+        "The Rebel",
+        "The Ruler"
+      ],
+      "Question": "Is your character in charge of freakishly huge army of hyenas?"
+    },
+    {
+      "Name": "Nala",
+      "Archetypes": [
+        "The Lover"
+      ],
+      "Question": "Is your character a childhood friend of the future king of pride rock?"
+    },
+    {
+      "Name": "Pumba &\nTimon",
+      "Archetypes": [
+        "The Jester"
+      ],
+      "Question": "Is your character a duo of animals known for singing the original version of 'Let it go!'?"
+    },
+    {
+      "Name": "Hyenas",
+      "Archetypes": [
+        "The Contagonist"
+      ],
+      "Question": "Is your character a pack of hungry animals who turn on their masters?"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "guess_who",
+  "version": "1.0.0",
+  "description": "A guess who game with archetypes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Abdullah Bin Asad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "reload": "^2.2.2"
+  }
+}
