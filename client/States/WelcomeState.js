@@ -13,9 +13,9 @@ class WelcomeState extends Phaser.State {
         this.game.load.image("red_bullet", "Assets/Red Bullet.png");
         this.game.load.image("blue_bullet", "Assets/Blue Bullet.png");
         this.game.load.image("play_Button", "Assets/Play Button.png");
-        // this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-        // this.game.scale.pageAlignHorizontally = true;
-        // this.game.scale.pageAlignVertically = true;
+        this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        this.game.scale.pageAlignHorizontally = true;
+        this.game.scale.pageAlignVertically = true;
     }
     create() {
         this.canvas = this.game.add.bitmapData(this.game.width, this.game.height);
