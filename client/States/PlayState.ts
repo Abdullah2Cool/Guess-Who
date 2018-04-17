@@ -18,7 +18,7 @@ class PlayState extends Phaser.State {
 
     init(choice) {
         this.choice = choice;
-        console.log("Other Player's Choice 2:" + this.choice);
+        // console.log("Other Player's Choice 2:" + this.choice);
     }
 
     preload() {
