@@ -22,6 +22,9 @@ class WelcomeState extends Phaser.State {
         this.game.load.image("blue_bullet", "Assets/Blue Bullet.png");
         this.game.load.image("play_Button", "Assets/Play Button.png");
 
+        this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        this.game.scale.pageAlignHorizontally = true;
+        this.game.scale.pageAlignVertically = true;
     }
 
     create() {
