@@ -26,8 +26,7 @@ class Tile extends Phaser.Sprite {
         }
         this.game.camera.shake(0.01, 100);
     }
-    update() {
-    }
+    update() { }
     flip() {
         if (this.bOpen) {
             this.animations.play("close", 40, false);

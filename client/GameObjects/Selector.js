@@ -3,7 +3,11 @@ class Selector extends Phaser.Text {
         super(game, x, y, name, { font: "20px Arial", fill: "#000000" });
         this.button = this.addChild(game.make.button(x - 80, y - 90, "button", function () {
             socket.emit("choice", { choice: name });
-            game.state.start("WaitState", true, false, { socket: socket, id: id, choice: name });
+            game.state.start("WaitState", true, false, {
+                socket: socket,
+                id: id,
+                choice: name,
+            });
         }, this)).scale.set(0.4, 0.4);
         this.events.onInputOver.add(function () {
             this.addColor("#ff000a", 0);
