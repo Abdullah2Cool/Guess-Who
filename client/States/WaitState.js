@@ -19,18 +19,18 @@ class WaitState extends Phaser.State {
         this.playButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 50, "play_Button", this.checkPartner, this);
         this.playButton.anchor.set(0.5, 0.5);
         this.inputField = this.game.add.inputField(this.game.world.centerX - 250, this.game.world.centerY - 120, {
-            font: '50px Arial',
-            fill: '#0005ff',
-            fontWeight: 'bold',
+            font: "50px Arial",
+            fill: "#0005ff",
+            fontWeight: "bold",
             width: 500,
             max: 15,
             padding: 8,
             borderWidth: 1,
-            borderColor: '#71ff00',
+            borderColor: "#71ff00",
             borderRadius: 6,
             placeHolder: "Partner's Name",
-            textAlign: 'center',
-            type: PhaserInput.InputType.text
+            textAlign: "center",
+            type: PhaserInput.InputType.text,
         });
         this.invalid = this.game.add.text(this.game.world.centerX, this.game.world.centerY + 300, "Invalid Partner Name", { font: "40px Arial", fill: "#000000", align: "center" });
         this.invalid.anchor.set(0.5, 0.5);

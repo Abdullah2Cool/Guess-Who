@@ -1,20 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Player_1 = require("./Player");
-const express = require('express');
+const express = require("express");
 const app = express();
-const server = require('http').createServer(app);
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/client/index.html');
+const server = require("http").createServer(app);
+app.get("/", function (req, res) {
+    res.sendFile(__dirname + "/client/index.html");
 });
-app.get('/*', function (req, res) {
+app.get("/*", function (req, res) {
     let file = req.params[0];
     // console.log('\t :: Express :: file requested : ' + file);
     res.sendFile(__dirname + "/client/" + file);
 });
-server.listen(process.env.PORT || 3000);
-console.log("Server started on localhost:3000");
-const io = require('socket.io')(server, {});
+const PORT = process.env.PORT || 3000;
+server.listen(PORT);
+console.log(`Server started on port ${PORT}`);
+const io = require("socket.io")(server, {});
 const All_SOCKETS = {};
 const ALL_PLAYERS = {};
 io.on("connect", function (socket) {
@@ -23,7 +24,7 @@ io.on("connect", function (socket) {
     let currentPlayer = new Player_1.Player(socket.id);
     ALL_PLAYERS[socket.id] = currentPlayer;
     socket.emit("serverState", {
-        id: socket.id
+        id: socket.id,
     });
     socket.on("sendName", function (data) {
         currentPlayer.name = data.name;
@@ -49,12 +50,12 @@ io.on("connect", function (socket) {
                 currentPlayer.assignPartner(match);
                 All_SOCKETS[currentPlayer.id].emit("partnerFound", {
                     id: match.id,
-                    choice: match.choice
+                    choice: match.choice,
                 });
                 match.assignPartner(currentPlayer);
                 All_SOCKETS[match.id].emit("partnerFound", {
                     id: currentPlayer.id,
-                    choice: currentPlayer.choice
+                    choice: currentPlayer.choice,
                 });
             }
             else {
@@ -90,7 +91,8 @@ io.on("connect", function (socket) {
     socket.on("disconnect", function () {
         delete ALL_PLAYERS[socket.id];
         delete All_SOCKETS[socket.id];
-        if (currentPlayer.partner != null && currentPlayer.partner.id in All_SOCKETS) {
+        if (currentPlayer.partner != null &&
+            currentPlayer.partner.id in All_SOCKETS) {
             All_SOCKETS[currentPlayer.partner.id].emit("partnerLeft", {});
             currentPlayer.removeParnter();
             currentPlayer.partner.removeParnter();

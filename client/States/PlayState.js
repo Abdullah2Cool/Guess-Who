@@ -51,14 +51,15 @@ class PlayState extends Phaser.State {
         this.allTiles.centerX = this.game.world.centerX;
         // this.socket.on("partnerLeft", this.onParnterLeft.bind(this));
     }
-    update() {
-    }
+    update() { }
     organize() {
         for (let i in this.allData.Archetypes) {
-            this.allArchetypes[this.allData.Archetypes[i].Type] = this.allData.Archetypes[i];
+            this.allArchetypes[this.allData.Archetypes[i].Type] =
+                this.allData.Archetypes[i];
         }
         for (let i in this.allData.Characters) {
-            this.allCharacters[this.allData.Characters[i].Name] = this.allData.Characters[i];
+            this.allCharacters[this.allData.Characters[i].Name] =
+                this.allData.Characters[i];
         }
         console.log(this.allArchetypes);
         console.log(this.allCharacters);

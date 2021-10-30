@@ -9,8 +9,8 @@ class SelectState extends Phaser.State {
     }
     preload() {
         this.game.load.spritesheet("tile_sheet", "Assets/Tile.png", 288, 432, 12);
-        this.game.load.json('myData', "Assets/data.json");
-        this.game.load.image('button', "Assets/pick_button.png");
+        this.game.load.json("myData", "Assets/data.json");
+        this.game.load.image("button", "Assets/pick_button.png");
     }
     create() {
         this.socket = io();
@@ -18,17 +18,20 @@ class SelectState extends Phaser.State {
         this.allSelectors = this.game.add.group();
         this.allSelectors.inputEnableChildren = true;
         this.organize();
-        this.add.text(this.game.world.centerX, 20, "Pick a character", {
+        this.add
+            .text(this.game.world.centerX, 20, "Pick a character", {
             font: "32px Arial",
-            fill: "#000000"
-        }).anchor.set(0.5, 0.5);
+            fill: "#000000",
+        })
+            .anchor.set(0.5, 0.5);
         this.socket.emit("sendName", { name: this.name });
         this.socket.on("serverState", this.onServerState.bind(this));
         this.game.stage.backgroundColor = "#fff";
     }
     organize() {
         for (let i in this.allData.Characters) {
-            this.allCharacters[this.allData.Characters[i].Name] = this.allData.Characters[i];
+            this.allCharacters[this.allData.Characters[i].Name] =
+                this.allData.Characters[i];
         }
     }
     onServerState(data) {

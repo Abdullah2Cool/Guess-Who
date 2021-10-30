@@ -21,8 +21,10 @@ class WelcomeState extends Phaser.State {
         this.canvas = this.game.add.bitmapData(this.game.width, this.game.height);
         this.canvas.addToWorld();
         for (var i = 0; i < this.max; i++) {
-            this.xx[i] = Math.floor(Math.random() * this.game.width) - this.game.width / 2;
-            this.yy[i] = Math.floor(Math.random() * this.game.height) - this.game.height / 2;
+            this.xx[i] =
+                Math.floor(Math.random() * this.game.width) - this.game.width / 2;
+            this.yy[i] =
+                Math.floor(Math.random() * this.game.height) - this.game.height / 2;
             this.zz[i] = Math.floor(Math.random() * 1700) - 100;
         }
         this.game.stage.backgroundColor = "#000";
@@ -32,18 +34,18 @@ class WelcomeState extends Phaser.State {
         this.playButton = this.game.add.button(this.game.world.centerX, this.game.world.centerY + 50, "play_Button", this.startNext, this);
         this.playButton.anchor.set(0.5, 0.5);
         this.inputField = this.game.add.inputField(this.game.world.centerX - 250, this.game.height / 2 - 120, {
-            font: '50px Arial',
-            fill: '#0005ff',
-            fontWeight: 'bold',
+            font: "50px Arial",
+            fill: "#0005ff",
+            fontWeight: "bold",
             width: 500,
             max: 15,
             padding: 8,
             borderWidth: 1,
-            borderColor: '#71ff00',
+            borderColor: "#71ff00",
             borderRadius: 6,
             placeHolder: this.name,
-            textAlign: 'center',
-            type: PhaserInput.InputType.text
+            textAlign: "center",
+            type: PhaserInput.InputType.text,
         });
     }
     update() {
@@ -58,16 +60,18 @@ class WelcomeState extends Phaser.State {
             }
             //  Swap this for a standard drawImage call
             if (i % 2 == 0) {
-                this.canvas.draw('red_bullet', x, y);
+                this.canvas.draw("red_bullet", x, y);
             }
             else {
-                this.canvas.draw('blue_bullet', x, y);
+                this.canvas.draw("blue_bullet", x, y);
             }
         }
     }
     startNext() {
         if (this.inputField.value !== "") {
-            this.game.state.start("SelectState", true, false, { name: this.inputField.value });
+            this.game.state.start("SelectState", true, false, {
+                name: this.inputField.value,
+            });
         }
     }
 }

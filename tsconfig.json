@@ -2,8 +2,12 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
-    "sourceMap": false
+    "sourceMap": false,
   },
+  "include": [
+    "server.ts", "Player.ts",
+    "client/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
